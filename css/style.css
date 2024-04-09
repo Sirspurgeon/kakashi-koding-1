@@ -1,0 +1,288 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* INDEX STYLES  */
+
+.header-content {
+  background-image: url("https://st.hzcdn.com/simgs/pictures/home-offices/updated-modern-jewel-box-kandw-audio-img~1fd18fb202f67a06_14-5252-1-69fbdd1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center, top;
+}
+.h1-in {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  /* flex-wrap: wrap; */
+  margin-right: -15px;
+  margin-left: -15px;
+  color: aliceblue;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+li {
+  display: inline;
+}
+.flex-container > div {
+  width: 100px;
+  margin: 100px;
+}
+.div1-home {
+  margin-top: 450px;
+}
+.div2-home {
+  margin-top: 250px;
+}
+.span-home {
+  margin-left: 251px;
+}
+.button-home {
+  border: 1px solid blue;
+  color: white;
+  background-color: blue;
+}
+.divider-in {
+  padding: 2px;
+  margin: 2px;
+  border-top: 1px solid black;
+}
+.h5-in {
+  text-align: center;
+}
+.li-footer {
+  padding: 2px;
+  margin: 2px;
+}
+
+/* PROJECTS STYLE */
+
+.bento {
+  min-block-size: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ch;
+  padding: 1ch;
+  width: 75%;
+}
+
+.bento__container {
+  display: grid;
+  grid-template-rows: 3fr 1fr 1fr 2fr 2fr 3fr;
+  gap: 1ch;
+  min-height: inherit;
+  flex: 2 0 320px;
+}
+
+.bento__container {
+  background-color: white;
+  grid-template-columns: 2fr 3fr 1fr 2fr;
+}
+
+.bento__item {
+  height: 100%;
+  width: 100%;
+  background-color: lightpink;
+  border-radius: 17px;
+  border: 17px groove gray;
+}
+
+.one {
+  grid-column: span 2;
+}
+.two {
+  grid-column: span 2;
+}
+.three {
+  grid-column: 1 / -1;
+  grid-row: span 4;
+}
+.four {
+  background-image: url(https://25.media.tumblr.com/tumblr_me9u09Ff9e1rlkicro1_500.gif);
+}
+.five {
+  grid-column: span 2;
+}
+.six {
+  background-image: url(https://i.pinimg.com/originals/2e/61/44/2e61441e3daca5efa2fceaeda4745b93.gif);
+}
+
+/* ABOUT CSS */
+
+.About-body {
+  min-height: 100vh;
+  background-image: url("");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav {
+  background-color: rgb(10, 120, 245);
+  height: 100px;
+
+  position: fixed;
+  width: 100%;
+}
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+  font-size: 20px solid black;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover {
+  background-color: rgb(101, 149, 252);
+}
+
+nav ul img {
+  width: 100px;
+  margin-right: auto;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: lightgray;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  backdrop-filter: blur(10px);
+}
+.sidebar li {
+  width: 100%;
+}
+.sidebar a {
+  width: 100%;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 915px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* SIGNIN CSS */
+
+.signin-body {
+  background-color: #f6b1d2;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/928173804382866130/569B2860EEE69C0EDB73CBB9AA60A6F3FE43F9C4/?imw=1024&imh=768&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.form1 {
+  margin: auto;
+  border-radius: 10px;
+  padding: 50px;
+  width: 50%;
+  max-width: 330px;
+  border: 3px solid rgb(16, 16, 67);
+  backdrop-filter: blur(100px);
+}
+
+.signin1 {
+  color: rgb(149, 142, 174);
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 20%;
+}
+
+.S-input1[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.S-input2[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.S-input1[type="text"],
+.S-input2[type="text"] {
+  background: transparent;
+  border: 5px solid rgb(116, 137, 204);
+}
+
+.s-label1,
+.s-label2 {
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 13px;
+  color: white;
+}
+
+.signin-button2 {
+  width: 100%;
+  max-width: 330px;
+  align-items: center;
+  background-color: #f6b1d2;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+.signin-footer {
+  text-align: center;
+  width: 100%;
+  color: rgb(79, 81, 135);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
