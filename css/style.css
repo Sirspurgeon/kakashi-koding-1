@@ -45,6 +45,10 @@ li {
 .span-home {
   margin-left: 251px;
 }
+.span-1in {
+color: aliceblue;
+text-align: center;
+}
 .button-home {
   border: 1px solid blue;
   color: white;
@@ -71,10 +75,19 @@ li {
 }
 .in-pic-pj {
   background-size: contain;
-  width: 50%;
+  width: 80%;
+  margin-left: 90px;
 }
-.row-in1 {
-  float: right;
+.row-in {
+width: 60%;
+}
+/* .project-sec {
+  background-image: url(/images/sec-bg.gif);
+  background-size: cover;
+} */
+.div-sec-img {
+  background-image: url(/images/ls-in-img.gif);
+  background-size: ;
 }
 /* PROJECTS STYLE */
 
@@ -139,7 +152,7 @@ li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  background-color: rgb(10, 120, 245);
+  background-color: grey;
   height: 100px;
 
   position: fixed;
