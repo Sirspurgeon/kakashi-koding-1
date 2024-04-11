@@ -46,8 +46,11 @@ li {
   margin-left: 251px;
 }
 .span-1in {
-color: aliceblue;
-text-align: center;
+  color: aliceblue;
+  text-align: center;
+}
+.h5-in1 {
+  text-align: center;
 }
 .button-home {
   border: 1px solid blue;
@@ -64,13 +67,43 @@ text-align: center;
 }
 .li-footer {
   padding: 2px;
-  margin: 2px;
+  margin-bottom: 10px;
+
 }
-/* .container-index {
-  display: block;
-  
-} */
+.footer-in-1 {
+  background-color: silver;
+}
+footer {
+  height: 350px;
+  background-color: silver;
+}
+.social-links {
+
+}
+.fa-brands fa-facebook {
+
+}
+.col {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: 37px;
+  font-size: 14px;
+}
+
+.container-index1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .div-in-col-3 {
+  display: flex;
+}
+.row-in-1 {
   display: flex;
 }
 .in-pic-pj {
@@ -79,7 +112,7 @@ text-align: center;
   margin-left: 90px;
 }
 .row-in {
-width: 60%;
+  width: 60%;
 }
 /* .project-sec {
   background-image: url(/images/sec-bg.gif);
@@ -152,8 +185,10 @@ width: 60%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 nav {
-  background-color: grey;
+  /* background-color: grey; */
   height: 100px;
+background-image: url(/images/sec-bg.gif);
+background-size: 45%;
 
   position: fixed;
   width: 100%;
@@ -312,4 +347,3 @@ nav ul img {
   bottom: 0;
   right: 0;
 }
-
