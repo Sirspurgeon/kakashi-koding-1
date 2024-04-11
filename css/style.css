@@ -65,6 +65,13 @@ li {
 
 /* PROJECTS STYLE */
 
+.projectheader>h1,h3{
+  margin-top: 7%;
+}
+.projectnav{
+
+  position:relative;
+}
 .bento {
   min-block-size: 100vh;
   display: flex;
@@ -72,11 +79,12 @@ li {
   gap: 1ch;
   padding: 1ch;
   width: 75%;
+  margin: 177px;
 }
 
 .bento__container {
   display: grid;
-  grid-template-rows: 3fr 1fr 1fr 2fr 2fr 3fr;
+  grid-template-rows: 3fr 1fr 1fr 2fr 2fr 3fr;/*fr = fractional unit*/
   gap: 1ch;
   min-height: inherit;
   flex: 2 0 320px;
@@ -97,22 +105,26 @@ li {
 
 .one {
   grid-column: span 2;
+  background-image: url(../images/projectmobileapp.jpg)
 }
 .two {
   grid-column: span 2;
+  background-image: url(../images/projectwebsite.jpg);
 }
 .three {
   grid-column: 1 / -1;
   grid-row: span 4;
+  background-image: url(../images/projectwebsite3.jpg);
 }
 .four {
-  background-image: url(https://25.media.tumblr.com/tumblr_me9u09Ff9e1rlkicro1_500.gif);
+  background-image: url(../images/projectmodernwebsite.jpg);
 }
 .five {
   grid-column: span 2;
+  background-image: url(../images/projectgaming.jpg);
 }
 .six {
-  background-image: url(https://i.pinimg.com/originals/2e/61/44/2e61441e3daca5efa2fceaeda4745b93.gif);
+  background-image: url(../images/projectmobile.jpg);
 }
 
 /* ABOUT CSS */
