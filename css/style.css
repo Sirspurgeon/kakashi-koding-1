@@ -62,6 +62,10 @@ li {
   padding: 2px;
   margin: 2px;
 }
+.container-index {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* PROJECTS STYLE */
 
