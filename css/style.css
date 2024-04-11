@@ -78,10 +78,12 @@ footer {
   background-color: silver;
 }
 .social-links {
-
+  
+  margin-top: 15px;
+  text-align: center;
 }
-.fa-brands fa-facebook {
-
+.social-in {
+  padding: 40px;
 }
 .col {
   position: relative;
