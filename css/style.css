@@ -62,11 +62,20 @@ li {
   padding: 2px;
   margin: 2px;
 }
-.container-index {
+/* .container-index {
+  display: block;
+  
+} */
+.div-in-col-3 {
   display: flex;
-  flex-wrap: wrap;
 }
-
+.in-pic-pj {
+  background-size: contain;
+  width: 50%;
+}
+.row-in1 {
+  float: right;
+}
 /* PROJECTS STYLE */
 
 .bento {
