@@ -39,6 +39,41 @@ small {
   display: flex;
   justify-content: space-between;
 }
+.test-in {
+  display: ruby;
+}
+.test-in {
+  display: flex;
+}
+.h2-test {
+  font-size: 44px;
+    font-weight: 700;
+}
+.h2-test-1 {
+  font-size: 50px;
+    font-weight: 700;
+}
+.p-test {
+  font-size: 20px;
+    font-weight: 300;
+    color: #8da2b5;
+    margin-bottom: 0px;
+}
+.tes-sec {
+  max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.btn-in{
+  background-color: #4b95a3ff;
+    color: white;
+    padding: 10px 25px;
+    letter-spacing: 0.1em;
+    margin-top: 25px;
+    display: inline-block;
+}
 li {
   display: inline;
 }
@@ -56,8 +91,13 @@ li {
   margin-left: 251px;
 }
 .span-1in {
-  color: aliceblue;
-  text-align: center;
+  font-weight: 400;
+  color: skyblue;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.span-in-1 {
+  color: white;
 }
 .h5-in1 {
   text-align: center;
@@ -112,6 +152,11 @@ li {
   margin-right: auto;
   margin-left: auto;
 }
+.content-box-in {
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 180px;
+}
 .div-in-col-3 {
   display: flex;
 }
@@ -120,12 +165,13 @@ li {
 }
 .in-pic-pj {
   background-size: contain;
-  width: 80%;
+  background-position: right;
+  max-width: 100%;
+  height: auto;
   margin-left: 90px;
 }
 .row-in {
-  width: 60%;
-}
+ }
 /* .project-sec {
   background-image: url(/images/sec-bg.gif);
   background-size: cover;
