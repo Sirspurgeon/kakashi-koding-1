@@ -42,9 +42,7 @@ small {
 .test-in {
   display: ruby;
 }
-.test-in {
-  display: flex;
-}
+
 .h2-test {
   font-size: 44px;
     font-weight: 700;
