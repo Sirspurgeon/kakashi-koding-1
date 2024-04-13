@@ -179,8 +179,11 @@ li {
   background-size: ;
 }
 /* PROJECTS STYLE */
-.projectnav
 
+.port-header{
+  position:relative;
+  margin-top: 47px;
+}
 
 .port-container {
   height: 100vh;
@@ -188,7 +191,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 27px;
+  margin: 27px 0;
 }
 .port {
   grid-template-columns: 1fr 1fr 1fr;
@@ -219,7 +222,7 @@ li {
 
 .port-details h1 {
   font-size: 18px;
-  margin: 2px 0;
+  margin: 37px 0;
   color: blue;
 }
 .port-details p {
