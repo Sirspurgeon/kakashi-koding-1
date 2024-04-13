@@ -179,127 +179,173 @@ li {
   background-size: ;
 }
 /* PROJECTS STYLE */
+.projectnav
 
-.projectheader>h1,h3{
-  margin: 30vh;
-  color:white;
-  font-family: Georgia;
-  font-weight:bolder;
-  text-align: center;
-  width: fit-content;
-  
-}
-.projectheader> h1{
-  font-size:xx-large;
-  border:17px groove grey;
-  background-color: darkgrey;
-  border-radius: 17px;
-  padding: 17px;
-}
-.projectheader> h3{
-  font-size:large;
-  border:17px groove grey;
-  background-color: darkgrey;
-  border-radius: 17px;
-  padding: 17px;
-}
-#projectbackgroundvideo{
-  width: 100vw;
+
+.port-container {
   height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
-@media (max-width: 500px) {
-  #projectbackgroundvideo { display:inherit; }
-  body {
-    background: url("../images/postervidproject.gif") no-repeat;
-    background-size: cover;
-  }
-}
-
-.projectnav{
-
-  position:relative;
-}
-.bento {
-  min-block-size: 100vh;
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1ch;
-  padding: 1ch;
-  width: 75%;
-  margin: 7px 177px ;
-  border-radius: 7%;
+  justify-content: center;
+  align-items: center;
+  margin: 27px;
 }
-
-.bento__container {
+.port {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items:center;
+  position: relative;
   display: grid;
-  grid-template-rows: 3fr 1fr 1fr 2fr 2fr 3fr;/*fr = fractional unit*/
-  gap: 1ch;
-  min-height: inherit;
-  flex: 2 0 320px;
+  gap: 27px 27px;
 }
 
-.bento__container {
-  background-color: transparent;
-  grid-template-columns: 2fr 3fr 1fr 2fr;
+.port .port-item {
+  position: relative;
+}
+.port img {
+  height: 160px;
+  width: 300px;
+  border-radius: 75px;
+  transition: 0.4s ease-in-out all;
 }
 
-.bento__item {
-  height: 100%;
-  width: 100%;
-  background-color: lightpink;
-  border-radius: 17px;
-  border: 17px groove gray;
+.port .port-details {
+  position: absolute;
+  padding: 10px 5px;
+  bottom: 0px;
+  opacity: 0;
+  transition: 0.4s ease-in-out all;
+
 }
-.one.two.three.four.five.six>img{
-  background-repeat: no-repeat;
-  background-position:inherit;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-     
+
+.port-details h1 {
+  font-size: 18px;
+  margin: 2px 0;
+  color: blue;
 }
-.one {
-  grid-column: span 2;
-  background-image: url(../images/projectmobileapp.jpg);
+.port-details p {
+  font-size: 14px;
+  color: blue;
+}
+.port-item:hover .port-details {
+  opacity: 1;
+  bottom: 10px;
   
 }
-.two {
-  grid-column: span 2;
-  background-image: url(../images/projectwebsite.jpg);
-}
-.three {
-  grid-column: 1 / -1;
-  grid-row: span 4;
-  background-image: url(../images/projectwebsite3.jpg);
-}
-.four {
-  background-image: url(../images/projectmodernwebsite.jpg);
-}
-.five {
-  grid-column: span 2;
-  background-image: url(../images/projectgaming.jpg);
 
-
-
-}
-.six {
-  background-image: url(../images/projectmobile.jpg);
-        
+.port-item:hover img {
+  transform: scale(1.05);
+  border-radius: 75px;
 }
 
+.port-item:hover {
+box-shadow: 0 5px 35px 0px rgba(0,0,0,0);
+}
 
+.port-item:hover::before, .port-item:hover::after {
+display: block;
+content: '';
+position: absolute;
+width: 317px;
+height: 187px;
+background: #FDA8CF;
+border-radius: 97px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
 
+.port-item:hover:after {
+background: #2d2d93;
+animation: 2s counterclockwise infinite;
+}
+/* Controls the direction of the animation hover  counterclockwise attribute */
+@keyframes clockwise {
+0% {
+  top: -5px;
+  left: 0;
+}
+12% {
+  top: -2px;
+  left: 2px;
+}
+25% {
+  top: 0;
+  left: 5px;    
+}
+37% {
+  top: 2px;
+  left: 2px;
+}
+50% {
+  top: 5px;
+  left: 0;    
+}
+62% {
+  top: 2px;
+  left: -2px;
+}
+75% {
+  top: 0;
+  left: -5px;
+}
+87% {
+  top: -2px;
+  left: -2px;
+}
+100% {
+  top: -5px;
+  left: 0;    
+}
+}
+/* Controls the direction of the animation hover clockwise attribute */
 
-
-  
-  
+@keyframes counterclockwise {
+0% {
+  top: -5px;
+  right: 0;
+}
+12% {
+  top: -2px;
+  right: 2px;
+}
+25% {
+  top: 0;
+  right: 5px;    
+}
+37% {
+  top: 2px;
+  right: 2px;
+}
+50% {
+  top: 5px;
+  right: 0;    
+}
+62% {
+  top: 2px;
+  right: -2px;
+}
+75% {
+  top: 0;
+  right: -5px;
+}
+87% {
+  top: -2px;
+  right: -2px;
+}
+100% {
+  top: -5px;
+  right: 0;    
+}
+}
+.port-link{
+text-decoration: none;
+}
+@media(max-width:600px){
+  .port {
+  grid-template-columns: 1fr;  gap: 0 10px;
+}
+  .port-container {
+    height: 210vh;}
+}  
 
 
 /* ABOUT CSS */
