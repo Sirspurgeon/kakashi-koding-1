@@ -45,13 +45,6 @@ li {
 .span-home {
   margin-left: 251px;
 }
-.span-1in {
-  color: aliceblue;
-  text-align: center;
-}
-.h5-in1 {
-  text-align: center;
-}
 .button-home {
   border: 1px solid blue;
   color: white;
@@ -67,121 +60,214 @@ li {
 }
 .li-footer {
   padding: 2px;
-  margin-bottom: 10px;
-}
-.footer-in-1 {
-  background-color: silver;
-}
-.footer1 {
-  height: 350px;
-  background-color: silver;
-}
-.social-links {
-  margin-top: 15px;
-  text-align: center;
-}
-.social-in {
-  padding: 40px;
-}
-.col {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-  line-height: 37px;
-  font-size: 14px;
+  margin: 2px;
 }
 
-.container-index1 {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.div-in-col-3 {
-  display: flex;
-}
-.row-in-1 {
-  display: flex;
-}
-.in-pic-pj {
-  background-size: contain;
-  width: 80%;
-  margin-left: 90px;
-}
-.row-in {
-  width: 60%;
-}
-/* .project-sec {
-  background-image: url(/images/sec-bg.gif);
-  background-size: cover;
-} */
-.div-sec-img {
-  background-image: url(/images/ls-in-img.gif);
-  background-size: ;
-}
 /* PROJECTS STYLE */
-
-.bento {
-  min-block-size: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1ch;
-  padding: 1ch;
-  width: 75%;
+.portimage{
+  width: 177px;
+  height: 277px;
+  display:inline-flex;
+  margin: 27px 17px;
 }
 
-.bento__container {
-  display: grid;
-  grid-template-rows: 3fr 1fr 1fr 2fr 2fr 3fr;
-  gap: 1ch;
-  min-height: inherit;
-  flex: 2 0 320px;
+.port-nav{
+  position:static;
 }
+.port-header{
 
-.bento__container {
-  background-color: white;
-  grid-template-columns: 2fr 3fr 1fr 2fr;
+position: relative;
+justify-content: center;
+align-items: center;
+display:flex;
 }
-
-.bento__item {
-  height: 100%;
+.port-header p {
+  font-weight: 277px;
+  font-family: Arial;
+  font-size: 24px;
+  text-align: center; 
+  color: blue;
+  border: 7px solid #0066FF; 
+  border-radius: 17px; 
+  margin-right: 37px;
+  padding: 27px;
+  text-shadow: 2px 2px 4px #a0d4ee;
+}
+.port-container {
+  height: 100vh;
   width: 100%;
-  background-color: lightpink;
-  border-radius: 17px;
-  border: 17px groove gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:  0 27px;
+}
+.port {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items:center;
+  position: relative;
+  display: grid;
+  gap: 27px 27px;
 }
 
-.one {
-  grid-column: span 2;
+.port .port-item {
+  position: relative;
 }
-.two {
-  grid-column: span 2;
+.port img {
+  height: 160px;
+  width: 300px;
+  border-radius: 75px;
+  transition: 0.4s ease-in-out all;
 }
-.three {
-  grid-column: 1 / -1;
-  grid-row: span 4;
+
+.port .port-details {
+  position: absolute;
+  padding: 10px 5px;
+  bottom: 0px;
+  opacity: 0;
+  transition: 0.4s ease-in-out all;
+
 }
-.four {
-  background-image: url(https://25.media.tumblr.com/tumblr_me9u09Ff9e1rlkicro1_500.gif);
+
+.port-details h1 {
+  font-size: 18px;
+  margin: 2px 0;
+  color: blue;
 }
-.five {
-  grid-column: span 2;
+.port-details p {
+  font-size: 14px;
+  color: blue;
 }
-.six {
-  background-image: url(https://i.pinimg.com/originals/2e/61/44/2e61441e3daca5efa2fceaeda4745b93.gif);
+
+/*  project section hover  */
+.port-item:hover .port-details {
+  opacity: 1;
+  bottom: 10px;
+  
 }
+
+.port-item:hover img {
+  transform: scale(1.05);
+  border-radius: 75px;
+}
+
+.port-item:hover {
+box-shadow: 0 5px 35px 0px rgba(0,0,0,0);
+}
+
+.port-item:hover::before, .port-item:hover::after {
+display: block;
+content: '';
+position: absolute;
+width: 317px;
+height: 187px;
+background: #FDA8CF;
+border-radius: 97px;
+z-index: -1;
+animation: 1s clockwise infinite;
+}
+
+.port-item:hover:after {
+background: #2d2d93;
+animation: 2s counterclockwise infinite;
+}
+/* Controls the direction of the animation hover  counterclockwise attribute */
+@keyframes clockwise {
+0% {
+  top: -5px;
+  left: 0;
+}
+12% {
+  top: -2px;
+  left: 2px;
+}
+25% {
+  top: 0;
+  left: 5px;    
+}
+37% {
+  top: 2px;
+  left: 2px;
+}
+50% {
+  top: 5px;
+  left: 0;    
+}
+62% {
+  top: 2px;
+  left: -2px;
+}
+75% {
+  top: 0;
+  left: -5px;
+}
+87% {
+  top: -2px;
+  left: -2px;
+}
+100% {
+  top: -5px;
+  left: 0;    
+}
+}
+/* Controls the direction of the animation hover clockwise attribute */
+
+@keyframes counterclockwise {
+0% {
+  top: -5px;
+  right: 0;
+}
+12% {
+  top: -2px;
+  right: 2px;
+}
+25% {
+  top: 0;
+  right: 5px;    
+}
+37% {
+  top: 2px;
+  right: 2px;
+}
+50% {
+  top: 5px;
+  right: 0;    
+}
+62% {
+  top: 2px;
+  right: -2px;
+}
+75% {
+  top: 0;
+  right: -5px;
+}
+87% {
+  top: -2px;
+  right: -2px;
+}
+100% {
+  top: -5px;
+  right: 0;    
+}
+}
+.port-link{
+text-decoration: none;
+}
+@media(max-width:600px){
+  .port {
+  grid-template-columns: 1fr;  gap: 0 10px;
+}
+  .port-container {
+    height: 210vh;}
+}  
+
 
 /* ABOUT CSS */
 
 .About-body {
 }
 nav {
+  background-color: rgb(10, 120, 245);
   height: 100px;
-  background-image: url(/images/sec-bg.gif);
-  background-size: 45%;
 
   position: fixed;
   width: 100%;
