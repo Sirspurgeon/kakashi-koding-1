@@ -90,8 +90,15 @@ display:flex;
   border: 7px solid #0066FF; 
   border-radius: 17px; 
   margin-right: 37px;
-  padding: 27px;
+  margin-left:17px ;
+  padding: 17px;
   text-shadow: 2px 2px 4px #a0d4ee;
+  display: flex;
+}
+.port-video{
+  display: flex;
+  flex-direction: column;
+  margin-left: 37px;
 }
 .port-container {
   height: 100vh;
