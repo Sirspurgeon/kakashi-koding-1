@@ -458,14 +458,18 @@ nav ul img {
 /* THE START OF PRICING SECTION */
 
 .pricing-section {
- 
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
   height: 800px;
 }
 .container {
-
+  padding: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+text-align: center;
  
-  margin: 100px 0;
-  background-color: #0066ff;
 }
 .pricing-heading {
   font-size: x-large;
@@ -478,7 +482,8 @@ nav ul img {
 }
 .pricing-img {
   width: 80px;
-
+height: 85px;
+border-radius: 40px;
  justify-content: center;
  align-items: center;
 }
@@ -493,11 +498,12 @@ align-items: center;
   height: 30px;
 }
 .cards-icons :hover{
-background-color: #4481eb;
+background: #4481eb;
+cursor: pointer;
 
 }
 .cards-{
-  background-color: white;
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
   padding: 20px;
   text-align: center;
   border: 2px solid gray;
@@ -510,8 +516,22 @@ padding: 30px 0;
 }
 .cards-contant{
   padding: 10px;
-  background-color: whitesmoke;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
   height: 300px;
+}
+.Contact-button {
+
+
+  width: 120px;
+  height: 30px;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  cursor: pointer;
+  color: black;
+  font-size: larger;
+  border-radius: 5px;
+  border-collapse: collapse;
+  box-shadow: 12px solid black;
+  opacity: 0.8;
 }
 
 @media (max-width: 915px) {
