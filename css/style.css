@@ -8,8 +8,8 @@
 /* INDEX STYLES  */
 
 .header-content {
-  background-image: url("https://st.hzcdn.com/simgs/pictures/home-offices/updated-modern-jewel-box-kandw-audio-img~1fd18fb202f67a06_14-5252-1-69fbdd1.jpg");
-  background-size: cover;
+  background-image: url("/images/IN-LARGE-OFFICE-ENSCAPE-REV-0.webp");
+  background-size: contain;
   background-repeat: no-repeat;
 
   background-position: center, top;
@@ -17,7 +17,11 @@
 .h1-in {
   text-align: center;
 }
-
+.nav-in {
+  background-image: url(/images/ls-in-img.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .row {
   display: flex;
   /* flex-wrap: wrap; */
@@ -38,6 +42,7 @@ li {
 }
 .div1-home {
   margin-top: 450px;
+  color: black;
 }
 .div2-home {
   margin-top: 250px;
@@ -62,40 +67,44 @@ li {
   padding: 2px;
   margin: 2px;
 }
-
+.div-sec-img {
+  background-image: url(/images/ls-in-img.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.
 /* PROJECTS STYLE */
-.portimage{
+.portimage {
   width: 177px;
   height: 277px;
-  display:inline-flex;
+  display: inline-flex;
   margin: 27px 17px;
 }
 
-.port-nav{
-  position:static;
+.port-nav {
+  position: static;
 }
-.port-header{
-
-position: relative;
-justify-content: center;
-align-items: center;
-display:flex;
+.port-header {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .port-header p {
   font-weight: 277px;
   font-family: Arial;
   font-size: 24px;
-  text-align: center; 
+  text-align: center;
   color: blue;
-  border: 7px solid #0066FF; 
-  border-radius: 17px; 
+  border: 7px solid #0066ff;
+  border-radius: 17px;
   margin-right: 37px;
-  margin-left:17px ;
+  margin-left: 17px;
   padding: 17px;
   text-shadow: 2px 2px 4px #a0d4ee;
   display: flex;
 }
-.port-video{
+.port-video {
   display: flex;
   flex-direction: column;
   margin-left: 37px;
@@ -106,11 +115,11 @@ display:flex;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:  0 27px;
+  margin: 0 27px;
 }
 .port {
   grid-template-columns: 1fr 1fr 1fr;
-  align-items:center;
+  align-items: center;
   position: relative;
   display: grid;
   gap: 27px 27px;
@@ -132,7 +141,6 @@ display:flex;
   bottom: 0px;
   opacity: 0;
   transition: 0.4s ease-in-out all;
-
 }
 
 .port-details h1 {
@@ -149,7 +157,6 @@ display:flex;
 .port-item:hover .port-details {
   opacity: 1;
   bottom: 10px;
-  
 }
 
 .port-item:hover img {
@@ -158,115 +165,117 @@ display:flex;
 }
 
 .port-item:hover {
-box-shadow: 0 5px 35px 0px rgba(0,0,0,0);
+  box-shadow: 0 5px 35px 0px rgba(0, 0, 0, 0);
 }
 
-.port-item:hover::before, .port-item:hover::after {
-display: block;
-content: '';
-position: absolute;
-width: 317px;
-height: 187px;
-background: #FDA8CF;
-border-radius: 97px;
-z-index: -1;
-animation: 1s clockwise infinite;
+.port-item:hover::before,
+.port-item:hover::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 317px;
+  height: 187px;
+  background: #fda8cf;
+  border-radius: 97px;
+  z-index: -1;
+  animation: 1s clockwise infinite;
 }
 
 .port-item:hover:after {
-background: #2d2d93;
-animation: 2s counterclockwise infinite;
+  background: #2d2d93;
+  animation: 2s counterclockwise infinite;
 }
 /* Controls the direction of the animation hover  counterclockwise attribute */
 @keyframes clockwise {
-0% {
-  top: -5px;
-  left: 0;
-}
-12% {
-  top: -2px;
-  left: 2px;
-}
-25% {
-  top: 0;
-  left: 5px;    
-}
-37% {
-  top: 2px;
-  left: 2px;
-}
-50% {
-  top: 5px;
-  left: 0;    
-}
-62% {
-  top: 2px;
-  left: -2px;
-}
-75% {
-  top: 0;
-  left: -5px;
-}
-87% {
-  top: -2px;
-  left: -2px;
-}
-100% {
-  top: -5px;
-  left: 0;    
-}
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;
+  }
 }
 /* Controls the direction of the animation hover clockwise attribute */
 
 @keyframes counterclockwise {
-0% {
-  top: -5px;
-  right: 0;
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;
+  }
 }
-12% {
-  top: -2px;
-  right: 2px;
+.port-link {
+  text-decoration: none;
 }
-25% {
-  top: 0;
-  right: 5px;    
-}
-37% {
-  top: 2px;
-  right: 2px;
-}
-50% {
-  top: 5px;
-  right: 0;    
-}
-62% {
-  top: 2px;
-  right: -2px;
-}
-75% {
-  top: 0;
-  right: -5px;
-}
-87% {
-  top: -2px;
-  right: -2px;
-}
-100% {
-  top: -5px;
-  right: 0;    
-}
-}
-.port-link{
-text-decoration: none;
-}
-@media(max-width:600px){
+@media (max-width: 600px) {
   .port {
-  grid-template-columns: 1fr;  gap: 0 10px;
-}
+    grid-template-columns: 1fr;
+    gap: 0 10px;
+  }
   .port-container {
-    height: 210vh;}
-}  
-
+    height: 210vh;
+  }
+}
 
 /* ABOUT CSS */
 
