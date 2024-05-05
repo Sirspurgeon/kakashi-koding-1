@@ -5,20 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="" href="../app.js" />
   </head>
   <body class="About-body">
     <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+        </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Pricing</a></li>
+
+        <li><a href="#">Projects</a></li>   
+           <li><a href="#">signup</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+
       <ul>
         <img src="../images/kk-logo.png" alt="" />
-        <a href="../index.html">Home</a>
-        <a href="../html/about.html">about</a>
-        <a href="../index.html#test">testimonial</a>
-        <a href="../index.html#price">Pricing</a>
-        <a href="../html/project.html">Project</a>
-        <a href="../html/signin.html">Log In</a>
-        <a href="../html/signup.html">Sign Up</a>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="../html/about.html">About</a></li>
+        <li class="hideOnMobile"><a href="../html/">Testimonial</a></li>
+        <li class="hideOnMobile"><a href="../html/">Pricing</a></li>
+        <li class="hideOnMobile"><a href="../html/project.html">Projects</a></li>
+        <li class="hideOnMobile"><a href="../html/signup.html">signup</a></li>
+        <li class="hideOnMobile"><a href="../html/signin.html">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
       </ul>
     </nav>
+
     <!-- E N D  N A V B A R -->
     <!-- Star of the hero section -->
     <section id="hero-section">
@@ -85,7 +125,7 @@
           <div class="cards-">
             <div class="cards-contant">
               <div>
-                <img  class="pricing-img" src="../images/afghan.png" alt="" />
+                <img class="pricing-img" src="../images/afghan.png" alt="" />
               </div>
               <h4 style="text-align: ">Noori</h4>
               <p>
@@ -96,8 +136,10 @@
                 <button class="cards-icons">
                   <i class="fa-brands fa-facebook"></i>
                 </button>
-                <button class="cards-icons"><i class="fa-brands fa-square-twitter"></i></button>
-  
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
                 <button class="cards-icons">
                   <i class="fa-brands fa-instagram"></i>
                 </button>
@@ -109,7 +151,7 @@
           <div class="cards-">
             <div class="cards-contant">
               <div>
-                <img  class="pricing-img" src="../images/200w (1).gif" alt="" />
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
               </div>
               <h4 style="text-align: ">Noori</h4>
               <p>
@@ -120,8 +162,10 @@
                 <button class="cards-icons">
                   <i class="fa-brands fa-facebook"></i>
                 </button>
-                <button class="cards-icons"><i class="fa-brands fa-square-twitter"></i></button>
-  
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
                 <button class="cards-icons">
                   <i class="fa-brands fa-instagram"></i>
                 </button>
@@ -133,7 +177,7 @@
           <div class="cards-">
             <div class="cards-contant">
               <div>
-                <img  class="pricing-img" src="../images/200w (1).gif" alt="" />
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
               </div>
               <h4 style="text-align: ">Noori</h4>
               <p>
@@ -144,8 +188,10 @@
                 <button class="cards-icons">
                   <i class="fa-brands fa-facebook"></i>
                 </button>
-                <button class="cards-icons"><i class="fa-brands fa-square-twitter"></i></button>
-  
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
                 <button class="cards-icons">
                   <i class="fa-brands fa-instagram"></i>
                 </button>
@@ -157,7 +203,7 @@
           <div class="cards-">
             <div class="cards-contant">
               <div>
-                <img  class="pricing-img" src="../images/200w (1).gif" alt="" />
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
               </div>
               <h4 style="text-align: ">Noori</h4>
               <p>
@@ -168,8 +214,10 @@
                 <button class="cards-icons">
                   <i class="fa-brands fa-facebook"></i>
                 </button>
-                <button class="cards-icons"><i class="fa-brands fa-square-twitter"></i></button>
-  
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
                 <button class="cards-icons">
                   <i class="fa-brands fa-instagram"></i>
                 </button>
@@ -177,10 +225,18 @@
               <button class="Contact-button">Contact Me</button>
             </div>
           </div>
-
-          
         </div>
       </div>
     </section>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
