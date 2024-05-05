@@ -560,6 +560,17 @@ padding: 30px 0;
     width: 100%;
   }
 }
+/* hero media */
+@media (max-width: 768px){
+  .hero-section {
+    width: 100%;
+    display: block;
+    
+  }
+  .hero-contant{
+    display: block;
+  }
+}
 /* END OF ABOUT US */
 /* SIGNIN CSS */
 
