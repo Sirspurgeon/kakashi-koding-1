@@ -283,14 +283,7 @@ li {
 
 /* ABOUT CSS */
 
-.About-body {
-  min-height: 100vh;
-  background-image: url("");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+
 nav {
   background-color: rgb(10, 120, 245);
   height: 100px;
@@ -349,6 +342,212 @@ nav ul img {
 .menu-button {
   display: none;
 }
+/* hero section */
+#hero-section {
+  display: flex;
+  padding-top: 100px;
+  background-image: url("../images/my\ bkg.jpg");
+  background-position: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  text-shadow: 12px solid black;
+}
+
+.logo-img {
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  margin-left: auto;
+}
+
+.hero-contant {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  width: 70%;
+  color: white;
+
+  align-items: center;
+  margin-left: 50px;
+}
+.hero-button {
+  margin-top: 50px;
+  width: 150px;
+  height: 60px;
+  background-color: rgb(72, 204, 248);
+  cursor: pointer;
+  color: black;
+  font-size: larger;
+  border-radius: 5px;
+  border-collapse: collapse;
+}
+.hero-button:hover {
+  background-color: rgb(1, 138, 251);
+  color: white;
+  transition: 0.25s;
+}
+.hero-button:focus {
+  background-color: rgb(75, 75, 252);
+  color: white;
+  transition: 0.15s;
+}
+/* THE END OF THE HERO SECTION  */
+/* THE START OF MARKETING SECTION */
+.marketing-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 100px 0px;
+  width: 100%;
+
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+}
+.marketing {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  width: 250px;
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: 40px;
+  padding: 60px 20px;
+}
+
+.gif {
+  display: flex;
+  width: 400px;
+  text-decoration: none;
+  border-radius: 25px;
+  margin-right: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
+.marketing-button {
+  margin-top: 40px;
+
+  width: 120px;
+  height: 50px;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  cursor: pointer;
+  color: black;
+  font-size: larger;
+  border-radius: 5px;
+  border-collapse: collapse;
+  box-shadow: 12px solid black;
+  opacity: 0.8;
+}
+.marketing-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #3ab5b0 0%,
+    #3d99be 31%,
+    #56317a 100%
+  );
+  color: whitesmoke;
+}
+.marketing-button:focus {
+  background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
+}
+/* THE START OF PRICING SECTION */
+
+.pricing-section {
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  height: 800px;
+}
+.container {
+  padding: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+text-align: center;
+ 
+}
+.pricing-heading {
+  font-size: x-large;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.pricing-img {
+  width: 80px;
+height: 85px;
+border-radius: 40px;
+ justify-content: center;
+ align-items: center;
+}
+.icons {
+margin: 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.cards-icons{
+  width: 30px;
+  height: 30px;
+}
+.cards-icons :hover{
+background: #4481eb;
+cursor: pointer;
+
+}
+.cards-{
+  background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+  padding: 20px;
+  text-align: center;
+  border: 2px solid gray;
+}
+.pricing-cards{
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+padding: 30px 0;
+}
+.cards-contant{
+  padding: 10px;
+  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  height: 300px;
+}
+.Contact-button {
+
+
+  width: 120px;
+  height: 30px;
+  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  cursor: pointer;
+  color: black;
+  font-size: larger;
+  border-radius: 5px;
+  border-collapse: collapse;
+  box-shadow: 12px solid black;
+  opacity: 0.8;
+}
+
 @media (max-width: 915px) {
   .hideOnMobile {
     display: none;
@@ -362,7 +561,18 @@ nav ul img {
     width: 100%;
   }
 }
-
+/* hero media */
+@media (max-width: 768px){
+  .hero-section {
+    width: 100%;
+    display: block;
+    
+  }
+  .hero-contant{
+    display: block;
+  }
+}
+/* END OF ABOUT US */
 /* SIGNIN CSS */
 
 .signin-body {

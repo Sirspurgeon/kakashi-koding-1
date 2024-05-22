@@ -5,286 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="" href="../app.js" />
   </head>
   <body class="About-body">
     <nav>
-      <ul>
-        <img src="../images/kk-logo.png" alt="">
-        <a href="../index.html">Home</a>
-        <a href="../html/about.html">about</a>
-        <a href="../index.html#test">testimonial</a>
-        <a href="../index.html#price">Pricing</a>
-        <a href="../html/project.html">Project</a>
-        <a href="../html/signin.html">Log In</a>
-        <a href="../html/signup.html">Sign Up</a>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+        </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Pricing</a></li>
+
+        <li><a href="#">Projects</a></li>   
+           <li><a href="#">signup</a></li>
+        <li><a href="#">Login</a></li>
       </ul>
-      </nav>
+
+      <ul>
+        <img src="../images/kk-logo.png" alt="" />
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="../html/about.html">About</a></li>
+        <li class="hideOnMobile"><a href="../html/">Testimonial</a></li>
+        <li class="hideOnMobile"><a href="../html/">Pricing</a></li>
+        <li class="hideOnMobile"><a href="../html/project.html">Projects</a></li>
+        <li class="hideOnMobile"><a href="../html/signup.html">signup</a></li>
+        <li class="hideOnMobile"><a href="../html/signin.html">Login</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 -960 960 960"
+              width="26"
+            >
+              <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <!-- E N D  N A V B A R -->
-
-    <!-- H E R O -->
-    <section id="hero-about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <img
-              src="../images/White And Black Modern Abstract Beauty Logo (1).png"
-              class="img-fluid"
-              alt="Demo image"
-            />
-          </div>
-          <div class="col-md-7 content-box hero-content">
-            <span>Charmander | Charmeleon | Charizard</span>
-            <h1>We are one big family of the <b>Best Coders Ever</b></h1>
-            <p>
-              Hear our story and see why the top organizations in the area are
-              choosing Team Charizard
-            </p>
-            <a href="#" class="btn btn-regular">Learn More</a>
-          </div>
+    <!-- Star of the hero section -->
+    <section id="hero-section">
+      <div class="hero-contant">
+        <div>
+          <span style="color: blue">Noori | Brittney | Christina | Spurge</span>
+          <h1>
+            We are one big family of the
+            <span style="font-size: xx-large; color: red">Best Coders Ever</span
+            >.
+          </h1>
         </div>
+        <div>
+          <p>
+            Hear is our story and see why the top organizations and companys
+            that worth billions of dollars in the area are choosing
+            Kakashikoding Company.
+          </p>
+        </div>
+
+        <div><button class="hero-button">Learn More</button></div>
+      </div>
+      <div>
+        <img
+          src="../images/kk-logo.png"
+          alt="kakashi company logo"
+          class="logo-img"
+        />
       </div>
     </section>
-    <!-- E N D  H E R O -->
-
-    <!-- M A R K E T I N G -->
-    <section id="marketing">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5">
-            <div class="content-box">
-              <span>Started From The Bottom</span>
-              <h2>Our History</h2>
-              <p>
-                Founded in the heart of Madison, WI, Team Charizard is a
-                creative hub where innovation meets technology. With a passion
-                for crafting exceptional online experiences, we specialize in
-                designing and building websites that captivate, engage, and
-                deliver results. Our team of skilled developers, designers, and
-                strategists is dedicated to helping businesses thrive in the
-                digital landscape.
-              </p>
-              <a href="#" class="btn btn-regular">Contact Us</a>
-            </div>
-          </div>
-          <div class="col-md-7">
-            <img
-              src="../images/White And Black Modern Abstract Beauty Logo (1).png"
-              s
-              class="img-fluid"
-              alt="Demo image"
-            />
-          </div>
-        </div>
+    <!-- End of the hero section -->
+    <section class="marketing-section">
+      <div class="marketing">
+        <span>STARTED FROM THE BOTTOM</span>
+        <h2>Our History</h2>
+        <p>
+          Founded in the heart of Madison, WI, kakashiKoding Company is a
+          creative hub where innovation meets technology. with a passion for
+          crafting exceptions, we specialize indesigning and building websites
+          that captivate, engage, and deliver results. Our Company's skilled
+          developers, designers, and stratgists is dedicated to helpin
+          businesses thrive in the digital landscape and to be the best in the
+          modren marketing world.
+        </p>
+        <button class="marketing-button">Contact Us</button>
+      </div>
+      <div class="marketing-gif">
+        <img class="gif" src="https://j.gifs.com/0V3wQK.gif" alt="" />
       </div>
     </section>
-    <!-- E N D  M A R K E T I N G -->
+    <!-- THE BEGENING OF PRICING SECTION -->
 
-    <!-- P R I C I N G -->
-    <section id="pricing" style="background-color: #f6f8f9">
+    <section class="pricing-section">
       <div class="container">
-        <div class="title-block">
+        <div class="pricing-heading">
           <h2>Who We Are</h2>
           <p>
             Hailing from the Northside of Madison, we came together to start
             this firm and haven't looked back since we love what we do
           </p>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="width: auto; border-radius: 15px; margin-top: 30px"
-            >
-              <div class="card-body text-center">
-                <div class="mt-3 mb-4">
-                  <img
-                    src="../images/White And Black Modern Abstract Beauty Logo (1).png"
-                    class="rounded-circle img-fluid"
-                    style="width: 100px"
-                  />
-                </div>
-                <h4 class="mb-2">Christina</h4>
-                <p class="text-muted mb-4">
-                  @Kakashi <span class="mx-2">|</span>
-                  <a href="#!">kakashicoding.com</a>
-                </p>
-                <div class="mb-4 pb-2">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-twitter fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-instagram fa-lg"></i>
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-regular btn-rounded btn-lg"
-                >
-                  Contact Me
+
+        <div class="pricing-cards">
+          <div class="cards-">
+            <div class="cards-contant">
+              <div>
+                <img class="pricing-img" src="../images/afghan.png" alt="" />
+              </div>
+              <h4 style="text-align: ">Noori</h4>
+              <p>
+                @kakashi <span>|</span>
+                <a href="#">kakashikoding.com</a>
+              </p>
+              <div class="icons">
+                <button class="cards-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
+                <button class="cards-icons">
+                  <i class="fa-brands fa-instagram"></i>
                 </button>
               </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="width: auto; border-radius: 15px; margin-top: 30px"
-            >
-              <div class="card-body text-center">
-                <div class="mt-3 mb-4">
-                  <img
-                    src="../images/White And Black Modern Abstract Beauty Logo (1).png"
-                    class="rounded-circle img-fluid"
-                    style="width: 100px; border-radius: px"
-                  />
-                </div>
-                <h4 class="mb-2">Brittney</h4>
-                <p class="text-muted mb-4">
-                  @Kakashi <span class="mx-2">|</span>
-                  <a href="#!">kakashicoding.com</a>
-                </p>
-                <div class="mb-4 pb-2">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-twitter fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-instagram fa-lg"></i>
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-regular btn-rounded btn-lg"
-                >
-                  Contact Me
-                </button>
-              </div>
+              <button class="Contact-button">Contact Me</button>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="width: auto; border-radius: 15px; margin-top: 30px"
-            >
-              <div class="card-body text-center">
-                <div class="mt-3 mb-4">
-                  <img
-                    src="../images/White And Black Modern Abstract Beauty Logo (1).png"
-                    class="rounded-circle img-fluid"
-                    style="width: 100px; border-radius: px"
-                  />
-                </div>
-                <h4 class="mb-2">Spurgoen</h4>
-                <p class="text-muted mb-4">
-                  @Kakashi <span class="mx-2">|</span>
-                  <a href="#!">kakashicoding.com</a>
-                </p>
-                <div class="mb-4 pb-2">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-twitter fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-instagram fa-lg"></i>
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-regular btn-rounded btn-lg"
-                >
-                  Contact Me
+          <div class="cards-">
+            <div class="cards-contant">
+              <div>
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
+              </div>
+              <h4 style="text-align: ">Noori</h4>
+              <p>
+                @kakashi <span>|</span>
+                <a href="#">kakashikoding.com</a>
+              </p>
+              <div class="icons">
+                <button class="cards-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
+                <button class="cards-icons">
+                  <i class="fa-brands fa-instagram"></i>
                 </button>
               </div>
+              <button class="Contact-button">Contact Me</button>
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div
-              class="card"
-              style="width: auto; border-radius: 15px; margin-top: 30px"
-            >
-              <div class="card-body text-center">
-                <div class="">
-                  <img
-                    src="../images/afghan.png"
-                    class=""
-                    style="width: 80px; border-radius: 10px"
-                  />
-                </div>
-                <h4 class="mb-2">Noori</h4>
-                <p class="text-muted mb-4">
-                  @Kakashi <span class="mx-2">|</span>
-                  <a href="#!">kakashicoding.com</a>
-                </p>
-                <div class="mb-4 pb-2">
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-facebook-f fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-twitter fa-lg"></i>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-outline-primary btn-floating"
-                  >
-                    <i class="fab fa-instagram fa-lg"></i>
-                  </button>
-                </div>
-                <button
-                  type="button"
-                  class="btn btn-regular btn-rounded btn-lg"
-                >
-                  Contact Me
+          <div class="cards-">
+            <div class="cards-contant">
+              <div>
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
+              </div>
+              <h4 style="text-align: ">Noori</h4>
+              <p>
+                @kakashi <span>|</span>
+                <a href="#">kakashikoding.com</a>
+              </p>
+              <div class="icons">
+                <button class="cards-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
+                <button class="cards-icons">
+                  <i class="fa-brands fa-instagram"></i>
                 </button>
               </div>
+              <button class="Contact-button">Contact Me</button>
+            </div>
+          </div>
+
+          <div class="cards-">
+            <div class="cards-contant">
+              <div>
+                <img class="pricing-img" src="../images/200w (1).gif" alt="" />
+              </div>
+              <h4 style="text-align: ">Noori</h4>
+              <p>
+                @kakashi <span>|</span>
+                <a href="#">kakashikoding.com</a>
+              </p>
+              <div class="icons">
+                <button class="cards-icons">
+                  <i class="fa-brands fa-facebook"></i>
+                </button>
+                <button class="cards-icons">
+                  <i class="fa-brands fa-square-twitter"></i>
+                </button>
+
+                <button class="cards-icons">
+                  <i class="fa-brands fa-instagram"></i>
+                </button>
+              </div>
+              <button class="Contact-button">Contact Me</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <script src="../app.js"></script>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
