@@ -72,7 +72,6 @@ li {
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
-
 }
 .footer1 {
   background-color: #a0d4ee;
@@ -458,8 +457,8 @@ nav ul img {
   height: 400px;
 }
 .in-pic-pj {
-  /* display: inline-flex;
-height: 500px;
-width: 800px;
-padding-left: 100px; */
+  height: 500px;
+  float: right;
+  padding-right: 10px;
+padding-bottom: 20px;
 }
