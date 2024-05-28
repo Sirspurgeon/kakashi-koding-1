@@ -18,7 +18,7 @@
   text-align: center;
 }
 .nav-in {
-  background-image: url(/images/ls-in-img.gif);
+  background-image: url(../images/ls-in-img.gif);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -68,9 +68,10 @@ li {
   margin: 2px;
 }
 .div-sec-img {
-  background-image: url(/images/ls-in-img.gif);
+  background-image: url(../images/ls-in-img.gif);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 600px;
 }
 .footer1 {
   background-color: #a0d4ee;
@@ -660,4 +661,14 @@ padding: 30px 0;
   position: fixed;
   bottom: 0;
   right: 0;
+}
+.in-secc-4 {
+  width: 100%;
+  height: 400px;
+}
+.in-pic-pj {
+  height: 500px;
+  float: right;
+  padding-right: 10px;
+padding-bottom: 20px;
 }
