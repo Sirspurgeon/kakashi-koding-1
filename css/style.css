@@ -8,7 +8,7 @@
 /* INDEX STYLES  */
 
 .header-content {
-  background-image: url("/images/IN-LARGE-OFFICE-ENSCAPE-REV-0.webp");
+  background-image: url("../images/IN-LARGE-OFFICE-ENSCAPE-REV-0.webp");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -18,7 +18,7 @@
   text-align: center;
 }
 .nav-in {
-  background-image: url(../images/ls-in-img.gif);
+  background-image: url("../images/ls-in-img.gif");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -68,7 +68,7 @@ li {
   margin: 2px;
 }
 .div-sec-img {
-  background-image: url(../images/ls-in-img.gif);
+  background-image: url("../images/ls-in-img.gif");
   background-size: cover;
   background-repeat: no-repeat;
   height: 600px;
